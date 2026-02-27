@@ -19,7 +19,6 @@ const Register = () => {
   const [errors, setErrors] = useState({});
   const [loading, setLoading] = useState(false);
 
-  // ✅ handle input change
   const handleChange = (e) => {
     setFormData((prev) => ({
       ...prev,
@@ -27,7 +26,6 @@ const Register = () => {
     }));
   };
 
-  // ✅ validate form before submit
   const validateForm = () => {
     const newErrors = {};
 
@@ -55,7 +53,6 @@ const Register = () => {
     return Object.keys(newErrors).length === 0;
   };
 
-  // ✅ handle form submit
   const handleSubmit = async (e) => {
     e.preventDefault();
     if (!validateForm()) return;
@@ -66,7 +63,6 @@ const Register = () => {
       const response = await authAPI.register(formData);
       console.log("Registration successful:", response);
 
-      // ✅ automatically log the user in (optional)
       login({
         name: formData.name,
         email: formData.email,
