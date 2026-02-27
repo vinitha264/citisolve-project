@@ -1,4 +1,4 @@
-/* ===== Navbar Main ===== */
+
 .navbar {
     width: 100%;
     background:blueviolet;
@@ -9,7 +9,6 @@
     z-index: 1000;
 }
 
-/* ===== Container ===== */
 .navbar-container {
     width: 90%;
     max-width: 1200px;
@@ -19,7 +18,6 @@
     align-items: center;
 }
 
-/* ===== Logo ===== */
 .logo {
     font-size: 1.6rem;
     font-weight: bold;
@@ -33,14 +31,12 @@
     opacity: 0.8;
 }
 
-/* ===== Authenticated Links ===== */
 .navbar-container div {
     display: flex;
     align-items: center;
     gap: 18px;
 }
 
-/* ===== Links ===== */
 .navbar-container a {
     text-decoration: none;
     color: #ffffff;
@@ -52,14 +48,12 @@
     color: #cfd8ff;
 }
 
-/* ===== Username ===== */
 .navbar-container p {
     color: #ffffff;
     font-weight: 600;
     margin: 0;
 }
 
-/* ===== Logout Button ===== */
 .navbar-container button {
     padding: 6px 12px;
     border: none;
@@ -76,7 +70,6 @@
     transform: translateY(-2px);
 }
 
-/* ===== Guest Buttons ===== */
 .navbar-right {
     display: flex;
     gap: 12px;
