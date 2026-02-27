@@ -1,4 +1,3 @@
-// This file exports reusable API functions that your frontend can call:
 
 const baseURL = 'https://citisolve-smarter-complaint-resolution.onrender.com/api/';
 
@@ -18,9 +17,6 @@ const callAPI = async (endpoint, options) => {
     throw error; // rethrow so caller can handle it
   }
 };
-
-// register = https://citisolve-smarter-complaint-resolution.onrender.com/api/auth/register
-// login    = https://citisolve-smarter-complaint-resolution.onrender.com/api/auth/login
 
 export const authAPI = {
   register: (userData) =>
