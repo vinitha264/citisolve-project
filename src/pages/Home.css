@@ -1,4 +1,3 @@
-/* ===== Global Home Container ===== */
 .home-container {
     min-height: 100vh;
     background:blueviolet;
@@ -28,7 +27,6 @@
     opacity: 0.9;
 }
 
-/* ===== Welcome Section ===== */
 .home-welcome {
     margin-top: 30px;
 }
@@ -39,7 +37,6 @@
     font-weight: 500;
 }
 
-/* ===== Quick Actions ===== */
 .quick-actions {
     display: flex;
     gap: 25px;
@@ -87,7 +84,6 @@
     background-color: #16305a;
 }
 
-/* ===== Auth Buttons ===== */
 .home-auth {
     margin: 20px 0;
 }
@@ -106,8 +102,6 @@
 .home-auth a:hover {
     background-color: #f0f0f0;
 }
-
-/* ===== How It Works Section ===== */
 .how-it-works {
     margin-top: 40px;
 }
@@ -160,7 +154,6 @@
     font-size: 0.9rem;
 }
 
-/* ===== CTA Section ===== */
 .cta {
     margin-top: 40px;
 }
@@ -188,7 +181,6 @@
     background-color: #f0f0f0;
 }
 
-/* ===== Responsive Design ===== */
 @media (max-width: 768px) {
     .home-content h1 {
         font-size: 2rem;
