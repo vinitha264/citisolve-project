@@ -1,0 +1,110 @@
+/* ===== Navbar Main ===== */
+.navbar {
+    width: 100%;
+    background:blueviolet;
+    padding: 12px 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* ===== Container ===== */
+.navbar-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* ===== Logo ===== */
+.logo {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #ffffff;
+    text-decoration: none;
+    letter-spacing: 1px;
+    transition: opacity 0.3s ease;
+}
+
+.logo:hover {
+    opacity: 0.8;
+}
+
+/* ===== Authenticated Links ===== */
+.navbar-container div {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+/* ===== Links ===== */
+.navbar-container a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.navbar-container a:hover {
+    color: #cfd8ff;
+}
+
+/* ===== Username ===== */
+.navbar-container p {
+    color: #ffffff;
+    font-weight: 600;
+    margin: 0;
+}
+
+/* ===== Logout Button ===== */
+.navbar-container button {
+    padding: 6px 12px;
+    border: none;
+    border-radius: 6px;
+    background-color: #ffffff;
+    color: #1e3c72;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.navbar-container button:hover {
+    background-color: #f0f0f0;
+    transform: translateY(-2px);
+}
+
+/* ===== Guest Buttons ===== */
+.navbar-right {
+    display: flex;
+    gap: 12px;
+}
+
+.nav-btn {
+    padding: 6px 14px;
+    background-color: #ffffff;
+    color: #1e3c72 !important;
+    border-radius: 6px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.nav-btn:hover {
+    background-color: #f0f0f0;
+    transform: translateY(-2px);
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+    .navbar-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .navbar-container div {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
